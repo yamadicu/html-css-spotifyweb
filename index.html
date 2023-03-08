@@ -5,29 +5,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
     <title>Document</title>
 
 </head>
 <body>
 
     <!-- PARTE PRINCIPALE -->
-    <main>
+    <main class="flex row">
 
         <!-- PARTE LATERALEFISSA -->
-        <aside>
+        <aside class="flex space-between column">
+
+            <!-- ICONE -->
+
+            <div>
+                <ul>
+                    <li><img src="./assets/img/logo-small.svg" alt="logo"></li>
+                    <li><img src="./assets/img/home.svg" alt="logo"></li>
+                    <li><img src="./assets/img/search.svg" alt="logo"></li>
+                    <li><img src="./assets/img/libreria.svg" alt="logo"></li>
+                </ul>
+            </div>
+
+            <div>
+                <ul>
+                    <li><img src="./assets/img/download.svg" alt="logo"></li>
+                    <li><img src="./assets/img/profile.svg" alt=""></li>
+                </ul>
+            </div>
 
         </aside>
 
-        <!-- PARTE TRASPARENTE -->
-        <section>
-
-        </section>
-
         <!-- PARTE PRINCIPALE SCROLLABILE -->
-        <section>
+        <section class="bg-main flex">
+
+            <!-- PARTE TRASPARENTE -->
+            <section class="flex flex-end trasparenza">
+
+                <a class="txt-white" href="#">EFFETTUA L'UPGRADE</a>
+
+             </section>
 
         </section>
-        
+
     </main>
 
     <!-- PARTE CON CANZONE -->
