@@ -6,6 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- FONT FAMILY -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+
     <!-- CSS -->
     <link rel="stylesheet" href="./assets/css/style.css">
 
@@ -17,7 +22,7 @@
     <!-- PARTE PRINCIPALE -->
     <main class="flex row">
 
-        <!-- PARTE LATERALEFISSA -->
+        <!-- PARTE LATERALE FISSA -->
         <aside class="flex space-between column">
 
             <!-- ICONE -->
@@ -29,6 +34,8 @@
                     <li><img src="./assets/img/search.svg" alt="logo"></li>
                     <li><img src="./assets/img/libreria.svg" alt="logo"></li>
                 </ul>
+
+                <!-- QUI INSERIRE PLAYLIST VERSIONE TABLET -->
             </div>
 
             <div>
@@ -40,16 +47,71 @@
 
         </aside>
 
-        <!-- PARTE PRINCIPALE SCROLLABILE -->
-        <section class="bg-main flex">
+        <!-- PARTE PRINCIPALE -->
+        <section class="bg-main flex column">
 
             <!-- PARTE TRASPARENTE -->
             <section class="flex flex-end trasparenza">
 
                 <a class="txt-white" href="#">EFFETTUA L'UPGRADE</a>
 
-             </section>
+            </section>
 
+            <!-- PARTE SCROLLABILE -->
+
+            <section class="margin-left">
+
+                <div class="txt-center">
+                    <ul id="pagine" class="flex wrap space-arownd">
+                        <li><a class="txt-grey" href="#"><strong>IN EVIDENZA</strong></a></li>
+                        <li><a class="txt-grey" href="#"><strong>PODCAST</strong> </a></li>
+                        <li><a class="txt-grey" href="#"><strong>CLASSIFICHE</strong></a></li>
+                        <li><a class="txt-grey" href="#"><strong>GENERI E MOOD</strong></a></li>
+                        <li><a class="txt-grey" href="#"><strong>NUOVE USCITE</strong></a></li>
+                        <li><a class="txt-grey" href="#"><strong>SCOPRI</strong> </a></li>
+                    </ul>
+                </div>
+
+                <!-- CONTENUTO PAGINA -->
+                <h2 class="txt-white">Recently played</h2>
+
+                <!-- ALBUM -->
+                <section class="flex wrap">
+
+                    <!-- PRIMO ALBUM -->
+                    <div class="txt-center scheda">
+
+                        <div id="canzoni">
+
+                            <img src="./assets/img/metal_lifting.jpg" alt="album">
+
+                        </div>
+                            
+                        <h3 class="txt-white margin-top titolo">Heavy Metal</h3>
+
+                        <span class="sottotitolo margin-top txt-grey">Subtitle</span>
+
+                    </div>
+
+                    <!-- SECONDO ALBUM -->
+                    <div class="txt-center scheda">
+
+                        <div id="canzoni">
+
+                            <img src="./assets/img/stranger.jpeg" alt="album">
+
+                        </div>
+                            
+                        <h3 class="txt-white margin-top titolo">Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h3>
+
+                        <span class="sottotitolo margin-top txt-grey">Kyle Dixon & Michael Stein</span>
+
+                    </div>
+
+                </section>
+
+            </section>
+                
         </section>
 
     </main>
