@@ -20,6 +20,10 @@ li{
     text-align: center;
 }
 
+.border-50{
+    border-radius: 50px;
+}
+
 /* COLORI */
 
 .txt-white{
@@ -155,6 +159,12 @@ h2{
 
 .scheda{
     width: calc(100% / 2 - 5%);
+}
+
+/* FOOTER */
+
+footer{
+    background-color: rgb(40 40 40);
 }
 
 /* PER VERSIONE TABLET E PC MODIFICARE GRANDEZZA CARATTERE */
