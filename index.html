@@ -30,7 +30,6 @@
         <aside class="flex space-between column">
 
             <!-- ICONE -->
-
             <div>
                 <ul>
                     <li><img src="./assets/img/logo-small.svg" alt="logo"></li>
@@ -176,35 +175,46 @@
                     </section>
                 
                     <!-- CREATO PER TE -->
-                    <section class="flex wrap">
-                        <h2 class="txt-white">Creato per John Doe</h2>
-                        <span class="txt-white">Più ascolti, più accurati saranno i suggerimenti</span>
+                    <section class="flex wrap column">
+
+                        <!-- TESTO -->
+                        <div class="flex column">
+
+                            <h2 class="txt-white">Creato per John Doe</h2>
+                            <span class="txt-white">Più ascolti, più accurati saranno i suggerimenti</span>
+
+                        </div>
                         
                         <!-- PARTE CON GLI ALBUM -->
-                        <div class="txt-center scheda">
-                            
-                            <div class="canzoni">
+
+                        <div class="flex wrap column">
+
+                            <div class="txt-center scheda">
                                 
-                                <img src="./assets/img/radar.jpeg" alt="immagine">
+                                <div class="canzoni">
+                                    
+                                    <img src="./assets/img/radar.jpeg" alt="immagine">
+                                    
+                                </div>
                                 
-                            </div>
-                            
-                            <h3 class="txt-white margin-top">Release Radar</h3>
-                            
-                        </div>
-                        
-                        <div class="txt-center scheda">
-                            
-                            <div class="canzoni">
-                                
-                                <img src="./assets/img/mixdaily.jpeg" alt="immagine">
+                                <h3 class="txt-white margin-top">Release Radar</h3>
                                 
                             </div>
                             
-                            <h3 class="txt-white margin-top">Daily Mix 1</h3>
+                            <div class="txt-center scheda">
+                                
+                                <div class="canzoni">
+                                    
+                                    <img src="./assets/img/mixdaily.jpeg" alt="immagine">
+                                    
+                                </div>
+                                
+                                <h3 class="txt-white margin-top">Daily Mix 1</h3>
+                                
+                            </div>
                             
                         </div>
-                        
+
                     </section>
                     
                     <!-- PIU' POPOLARI -->
@@ -244,13 +254,13 @@
             </section>
             
             <!-- PARTE CON CANZONE -->
-            <footer class="flex space-between">
+            <footer class="flex space-between align-center">
                 
                 <!-- CANZONE -->
-                <section class="flex row">
+                <div class="flex row">
                     
                     <!-- BRANO -->
-                    <div class="canzoni txt-center flex row">
+                    <div class="txt-center flex row align-center">
                             
                         <img id="rispodotta" src="./assets/img/sinister.jpeg" alt="canzone">
 
@@ -259,10 +269,11 @@
                             <h3 class="txt-white">Sinister</h3>
                             <span class="txt-grey">Brano nome</span>
 
+                            
                         </div>
 
                         <div id="preferiti" class="flex row wrap">
-                        
+                            
                             <i class="fa-regular fa-heart txt-grey"></i>
                             <i class="fa-regular fa-folder txt-grey"></i>
 
@@ -270,13 +281,13 @@
 
                     </div>
                     
-                </section>
+                </div>
                 
                 <!-- CONTROLLO CANZONE -->
-                <section class="flex">
+                <div class="flex">
                     
                     <!-- CONTROLLO CANZONE -->
-                    <div class="">
+                    <div id="controllo">
 
                         <i class="fa-solid fa-shuffle txt-white"></i>
                         <i class="fa-solid fa-backward-step txt-white"></i>
@@ -291,19 +302,22 @@
                         
                     </div>
                     
-                </section>
+                </div>
                 
                 <!-- CONTROLLO RISPODUZIONE -->
-                <section>
+                <div>
                     
                     <!-- COMANDI PLAYLIST -->
                     <div>
+
+                        <i class="fa-solid fa-bars txt-white"></i>
+                        <i class="fa-solid fa-display txt-white"></i>
                         
                     </div>
                     
                     <!-- LIVELLO VOLUME -->
                     
-                </section>
+                </div>
                 
             </footer>
 
