@@ -21,7 +21,11 @@ li{
 }
 
 .border-50{
-    border-radius: 50px;
+    border-radius: 50%;
+}
+
+.txt-grey:hover{
+    color: rgb(255, 255, 255)
 }
 
 /* COLORI */
@@ -31,11 +35,15 @@ li{
 }
 
 .txt-grey{
-    color: rgb(117 119 124);
+    color: rgb(255, 255, 255, 0.5);
 }
 
 .bg-main{
     background-color: rgb(20 25 34);
+}
+
+.bg-white{
+    background-color: grey;
 }
 
 /* FINE SEZIONE COLORI */
@@ -82,6 +90,10 @@ li{
     align-items: center;
 }
 
+.padding-bottom{
+    margin-bottom: 15vh;
+}
+
 /* FINE SEZIONE POSIZIONE */
 
 /* ASIDE */
@@ -93,33 +105,61 @@ aside{
     margin: 0;
 }
 
+aside div{
+    margin-left: 0.5rem;
+}
+
 aside div ul li{
     width: 2rem;
     margin: 0.25rem;
-    margin-left: 0.5rem;
+    display: flex;
+    align-items: center;
 }
 
 aside div ul li:first-child{
     margin-top: 0.5rem;
 }
 
+aside div ul li img{
+    padding-right: 5px;
+}
+
+.txt-none{
+    display: none;
+}
+
+.bg-grey{
+    margin-top: 5px;
+    background-color: rgb(255 ,255 ,255 ,0.5);
+    padding: 5px;
+}
+
+.tiny{
+    width: 2rem;
+}
+
+.profilo{
+    background-color: grey;
+    border-radius: 50%;
+}
+
 /* PARTE TRASPARENTE */
 
 main section:first-child{
-    width: 90vw
+    width: 85vw
 }
 
 .trasparenza a{
-    margin-top: 2vh;
-    margin-bottom: 2vh;
+    margin: 2vh;
     border: 1px  solid white;
     border-radius: 25px;
-    padding: 5px;
+    padding: 10px;
 }
 
 .trasparenza{
     background-color: rgb(0 ,0 ,0 ,0.5);
     height: 8vh;
+    width: 85vw;
     position: fixed;
 }
 
@@ -129,6 +169,7 @@ main section:first-child{
     margin-top: 10vh;
     overflow: scroll;
     height: 90vh;
+    width: 90vw;
 }
 
 #pagine li{
@@ -151,6 +192,9 @@ h2{
     overflow-y: scroll;
 }
 
+.popolari{
+    margin-top: 1rem;
+}
 
 /* CANZONI */
 
@@ -193,14 +237,59 @@ footer{
     margin-left: 0.5rem;
 }
 
+#stat-song{
+    background-color: rgb(255, 255, 255, 0.5);
+    position: absolute;
+    width: 30vw;
+    height: 2px;
+    display: flex;
+}
+
 #controllo i{
     padding-left: 0.5rem;
 }
 
 /* PER VERSIONE TABLET E PC MODIFICARE GRANDEZZA CARATTERE */
 
-@media only screen and (min-width: 1000px){
+@media only screen and (min-width: 768px){
+
+    aside div ul li:first-child{
+        width: 30px;
+    }
+
+    aside div ul li{
+        width: 30px;
+    }
+
+    .spoty{
+        font-size: 2rem;
+    }
+
+    .txt-none{
+        display: inline-block;
+    }
+
+    .playlist{
+        padding-top: 20px;
+    }
+
     .scheda{
         width: calc(100% / 6 - 5%);
+    }
+
+    #centro{
+        width: 85vw;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+
+    #ultime-icone{
+        padding-bottom: 5%;
+    }
+
+    #artisti-consigliati{
+        padding-top: 5%;
+        padding-bottom: 5%;
     }
 }

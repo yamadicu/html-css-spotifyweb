@@ -32,19 +32,57 @@
             <!-- ICONE -->
             <div>
                 <ul>
-                    <li><img src="./assets/img/logo-small.svg" alt="logo"></li>
-                    <li><img src="./assets/img/home.svg" alt="logo"></li>
-                    <li><img src="./assets/img/search.svg" alt="logo"></li>
-                    <li><img src="./assets/img/libreria.svg" alt="logo"></li>
+                    <li class="txt-grey">
+                        <img src="./assets/img/logo-small.svg" alt="logo">
+                        <span class="txt-none spoty">Spotify</span>
+                    </li>
+                    <li class="txt-grey">
+                        <img src="./assets/img/home.svg" alt="logo">
+                        <span class="txt-none">Home</span>
+                    </li>
+                    <li class="txt-grey">
+                        <img src="./assets/img/search.svg" alt="logo">
+                        <span class="txt-none">Cerca</span>
+                    </li>
+                    <li class="txt-grey">
+                        <img src="./assets/img/libreria.svg" alt="logo">
+                        <span class="txt-none">La tuo libreria</span>
+                    </li>
                 </ul>
 
-                <!-- QUI INSERIRE PLAYLIST VERSIONE TABLET -->
+                <div class="txt-none playlist">
+
+                    <h3 class="txt-white">PLAYLIST</h3>
+                    <div class="flex row">
+                        <div class="bg-grey txt-center">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                        <span class="txt-white">Crea Playlist</span>
+                    </div>
+                    <ul>
+                        <li class="txt-white txt">Nome Playlist</li>
+                        <li class="txt-white">Nome Playlist</li>
+                        <li class="txt-white">Nome Playlist</li>
+                        <li class="txt-white">Nome Playlist</li>
+                        <li class="txt-white">Nome Playlist</li>
+                        <li class="txt-white">Nome Playlist</li>
+                        <li class="txt-white">Nome Playlist</li>
+                    </ul>
+                    
+                </div>
+
             </div>
 
-            <div>
+            <div id="ultime-icone">
                 <ul>
-                    <li><img src="./assets/img/download.svg" alt="logo"></li>
-                    <li><img src="./assets/img/profile.svg" alt=""></li>
+                    <li class="txt-grey tiny">
+                        <img class="tiny" src="./assets/img/download.svg" alt="logo">
+                        <span class="txt-none">Installa app</span>
+                    </li>
+                    <li class="txt-grey">
+                        <img class="profilo" src="./assets/img/profile.svg" alt="">
+                        <span class="txt-none">John Doe</span>
+                    </li>
                 </ul>
             </div>
 
@@ -56,11 +94,11 @@
             <section class="bg-main flex column">
                 
                 <!-- PARTE TRASPARENTE -->
-                <section class="flex flex-end trasparenza">
+                <div class="flex flex-end trasparenza">
                     
                     <a class="txt-white" href="#">EFFETTUA L'UPGRADE</a>
                     
-                </section>
+                </div>
                 
                 <!-- PARTE SCROLLABILE -->
                 <section id="centro" class="margin-left">
@@ -187,7 +225,7 @@
                         
                         <!-- PARTE CON GLI ALBUM -->
 
-                        <div class="flex wrap column">
+                        <div class="flex wrap row">
 
                             <div class="txt-center scheda">
                                 
@@ -218,33 +256,43 @@
                     </section>
                     
                     <!-- PIU' POPOLARI -->
-                    <section class="flex wrap">
+                    <section id="artisti-consigliati" class="flex wrap column popolari  padding-bottom">
                         
-                        <h2 class="txt-white">Artisti più popolari</h2>
-                        <span class="txt-grey">Più ascolti, più accurati saranno i suggerimenti</span>
-                        
-                        <div class="txt-center scheda">
-                            
-                            <div class="canzoni">
-                                
-                                <img class="border-50" src="./assets/img/youg.jpeg" alt="immagine">
-                                
-                            </div>
-                            
-                            <h3 class="txt-white margin-top">Lena del Rey</h3>
+                        <!-- TESTO -->
+                        <div class="flex column"> 
+
+                            <h2 class="txt-white">Artisti più popolari</h2>
+                            <span class="txt-grey">Più ascolti, più accurati saranno i suggerimenti</span>
                             
                         </div>
-                        
-                        <div class="txt-center scheda">
-                            
-                            <div class="canzoni">
+
+                        <!-- CONTENUTO ARTISTI -->
+                        <div class="flex wrap row">
+
+                            <div class="txt-center scheda">
                                 
-                                <img class="border-50" src="./assets/img/einaudi.jpeg" alt="immagine">
+                                <div class="canzoni">
+                                    
+                                    <img class="border-50" src="./assets/img/youg.jpeg" alt="immagine">
+                                    
+                                </div>
+                                
+                                <h3 class="txt-white margin-top">Lena del Rey</h3>
                                 
                             </div>
                             
-                            <h3 class="txt-white margin-top">Ludovico Einaudi</h3>
-                            
+                            <div class="txt-center scheda">
+                                
+                                <div class="canzoni">
+                                    
+                                    <img class="border-50" src="./assets/img/einaudi.jpeg" alt="immagine">
+                                    
+                                </div>
+                                
+                                <h3 class="txt-white margin-top">Ludovico Einaudi</h3>
+                                
+                            </div>
+
                         </div>
                         
                     </section>
@@ -286,21 +334,34 @@
                 <!-- CONTROLLO CANZONE -->
                 <div class="flex">
                     
-                    <!-- CONTROLLO CANZONE -->
-                    <div id="controllo">
+                    <div class="txt-center">
 
-                        <i class="fa-solid fa-shuffle txt-white"></i>
-                        <i class="fa-solid fa-backward-step txt-white"></i>
-                        <i class="fa-sharp fa-regular fa-circle-play txt-white"></i>
-                        <i class="fa-solid fa-forward-step txt-white"></i>
+                        <!-- CONTROLLO CANZONE -->
+                        <div id="controllo">
+                            
+                            <i class="fa-solid fa-shuffle txt-white"></i>
+                            <i class="fa-solid fa-backward-step txt-white"></i>
+                            <i class="fa-sharp fa-regular fa-circle-play txt-white"></i>
+                            <i class="fa-solid fa-forward-step txt-white"></i>
                         <i class="fa-solid fa-rotate-right txt-white"></i>
                         
                     </div>
                     
                     <!-- STATO CANZONE -->
-                    <div>
+                    <div class="margin-top flex space-between">
                         
+                        <!-- MINUTO CANZONE -->
+                        <span class="txt-white">0:25</span>
+                        
+                        <!-- BARRA CANZONE -->
+                        <div id="stat-song">
+                            <div class="bg-white flex"></div>
+                        </div>
+
+                        <span class="txt-white">4:35</span>
                     </div>
+
+                </div>
                     
                 </div>
                 
@@ -312,6 +373,7 @@
 
                         <i class="fa-solid fa-bars txt-white"></i>
                         <i class="fa-solid fa-display txt-white"></i>
+                        <i class="fa-solid fa-volume-high txt-white"></i>
                         
                     </div>
                     
